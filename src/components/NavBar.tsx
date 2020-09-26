@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 class NavBar extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <h1 className="f4 bold center mw6">Marie-anne Mawhin</h1>
         <ul className="list pl0 ml0 center mw6">
           <li className="pv3 bb b--washed-blue">
@@ -46,7 +46,7 @@ class NavBar extends Component {
             </a>
           </li>
         </ul>
-      </div>
+      </Fragment>
     )
   }
 }
