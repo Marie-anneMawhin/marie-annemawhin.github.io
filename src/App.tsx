@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './components/NavBar'
+import Main from './components/Main'
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
         <NavBar />
       </div>
       <div className="fl w-two-thirds w-70-m w-80-l pa3 h-100 bg-washed-blue">
-        <div className="">
-          <p className="gold">Hello</p>
-        </div>
+        <Main />
       </div>
     </div>
   )
