@@ -4,7 +4,7 @@ import NavBar from './components/NavBar'
 function App() {
   return (
     <div className="App vh-100 sans-serif">
-      <div className="fl w-25 h-100 pa3 bg-navy light-gray">
+      <div className="fl w-25 h-100 pa3 bg-navy light-gray o-80">
         <NavBar />
       </div>
       <div className="fl w-75 pa3">
