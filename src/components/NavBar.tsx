@@ -5,14 +5,46 @@ class NavBar extends Component {
       <div>
         <h1 className="f4 bold center mw6">Marie-anne Mawhin</h1>
         <ul className="list pl0 ml0 center mw6">
-          <li className="pv3 bb b--washed-blue">Contact</li>
-          <li className="pv3 bb b--washed-blue">Skills</li>
-          <li className="pv3 bb b--washed-blue">Languages</li>
-          <li className="pv3 bb b--washed-blue">Interests</li>
-          <li className="pv3 bb b--washed-blue">Experience</li>
-          <li className="pv3 bb b--washed-blue">Education</li>
-          <li className="pv3 bb b--washed-blue">Projects</li>
-          <li className="pv3">Achievements</li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Contact
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Skills
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Languages
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Interests
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Experience
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Education
+            </a>
+          </li>
+          <li className="pv3 bb b--washed-blue">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Projects
+            </a>
+          </li>
+          <li className="pv3">
+            <a className="f5 link dim washed-blue bg-navy" href="#0">
+              Achievements
+            </a>
+          </li>
         </ul>
       </div>
     )
