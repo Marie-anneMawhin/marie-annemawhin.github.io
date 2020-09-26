@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/marie-annemawhin.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/marie-annemawhin.github.io/static/js/main.1cbd531c.chunk.js",
+    "main.js.map": "/marie-annemawhin.github.io/static/js/main.1cbd531c.chunk.js.map",
+    "runtime-main.js": "/marie-annemawhin.github.io/static/js/runtime-main.8ab2244a.js",
+    "runtime-main.js.map": "/marie-annemawhin.github.io/static/js/runtime-main.8ab2244a.js.map",
+    "static/js/2.0cacc331.chunk.js": "/marie-annemawhin.github.io/static/js/2.0cacc331.chunk.js",
+    "static/js/2.0cacc331.chunk.js.map": "/marie-annemawhin.github.io/static/js/2.0cacc331.chunk.js.map",
+    "index.html": "/marie-annemawhin.github.io/index.html",
+    "precache-manifest.69430005bb89dbf8f697e0239bb0621f.js": "/marie-annemawhin.github.io/precache-manifest.69430005bb89dbf8f697e0239bb0621f.js",
+    "service-worker.js": "/marie-annemawhin.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/marie-annemawhin.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0cacc331.chunk.js.LICENSE.txt": "/marie-annemawhin.github.io/static/js/2.0cacc331.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/marie-annemawhin.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ab2244a.js",
+    "static/js/2.0cacc331.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.1cbd531c.chunk.js"
+  ]
+}
