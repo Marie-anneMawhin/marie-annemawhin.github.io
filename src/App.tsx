@@ -3,11 +3,11 @@ import NavBar from './components/NavBar'
 
 function App() {
   return (
-    <div className="App mw9 center ph3-ns">
-      <div className="fl w-25 pa2">
+    <div className="App vh-100 sans-serif">
+      <div className="fl w-25 h-100 pa3 bg-navy light-gray">
         <NavBar />
       </div>
-      <div className="fl w-75 pa2">
+      <div className="fl w-75 pa3">
         <p className="gold">Hello</p>
       </div>
     </div>

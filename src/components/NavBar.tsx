@@ -1,7 +1,11 @@
-import React, { Component } from 'react';
-class Button extends Component {
+import React, { Component } from 'react'
+class NavBar extends Component {
   render() {
-    return <p>Hello I'm a navbar</p>
+    return (
+      <div>
+        <p>Hello I'm a navbar</p>
+      </div>
+    )
   }
 }
-export default Button
+export default NavBar
