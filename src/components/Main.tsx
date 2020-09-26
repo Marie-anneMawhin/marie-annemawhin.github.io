@@ -1,8 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Education from './Education'
+import Publications from './Publications'
 class Main extends Component {
   render() {
-    return <Education />
+    return (
+    <Fragment>
+      <Education />
+      <Publications/>
+    </Fragment>)
   }
 }
 

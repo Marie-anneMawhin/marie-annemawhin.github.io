@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import SectionHeader from './SectionHeader'
 
 const items = [
   {date: '2020', course: 'Data Science with python (Full track)', provider: 'DataCamp'},
@@ -12,13 +13,18 @@ const items = [
 const Education = () => {
   const educationItems = items.map(({date, course, provider}, index) => 
     <div key={index} className="tc ph4">
-    <h1 className="f4 f3-m f2-l fw2 black-90 mv3">{course}</h1>
-    <h2 className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+    <p className="f4 f3-m f2-l fw2 black-90 mv3">{course}</p>
+    <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
       <span>{date}</span>&nbsp;<span>{provider}</span>
-    </h2>
+    </p>
   </div>
   )
-  return <Fragment>{educationItems}</Fragment>
+  return (
+    <Fragment>
+      <SectionHeader title="Education"/>
+      {educationItems}
+    </Fragment>
+  )
 }
 
 export default Education
