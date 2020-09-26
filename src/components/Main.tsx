@@ -4,10 +4,11 @@ import Publications from './Publications'
 class Main extends Component {
   render() {
     return (
-    <Fragment>
-      <Education />
-      <Publications/>
-    </Fragment>)
+      <Fragment>
+        <Education />
+        <Publications />
+      </Fragment>
+    )
   }
 }
 
