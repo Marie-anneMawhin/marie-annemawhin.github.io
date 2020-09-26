@@ -3,8 +3,8 @@ class NavBar extends Component {
   render() {
     return (
       <Fragment>
-        <h1 className="f4 bold center mw6">Marie-anne Mawhin</h1>
-        <ul className="list pl0 ml0 center mw6">
+        <h1 className="f4 bold mw6">Marie-anne Mawhin</h1>
+        <ul className="list pl0 ml0 mw6">
           <li className="pv3 bb b--washed-blue">
             <a className="f5 fw5 link dim washed-blue bg-navy" href="#0">
               Contact
