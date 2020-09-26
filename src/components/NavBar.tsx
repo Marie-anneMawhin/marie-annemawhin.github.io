@@ -8,13 +8,27 @@ const sectionsTitles = [
   'Experience',
   'Projects',
   'Education',
+  'Publications',
   'Achievements'
 ]
 
 const NavBar: React.FC = () => {
-  const links = sectionsTitles.map((title) => (
-    <li className="pv3 bb b--washed-blue">
-      <a className="f5 fw5 link dim washed-blue bg-navy" href="#0">
+  const scrollToId = (id: string) => {
+    const selector = document.querySelector(`#${id}`)
+    if (selector) {
+      return selector.scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+  }
+
+  const links = sectionsTitles.map((title, id) => (
+    <li key={id} className="pv3 bb b--washed-blue">
+      <a
+        onClick={() => scrollToId(title.toLowerCase())}
+        className="f5 fw5 link dim washed-blue bg-navy"
+        href="#0"
+      >
         {title}
       </a>
     </li>
