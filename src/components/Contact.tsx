@@ -9,7 +9,12 @@ const items = [
 const Contact: React.FC = () => {
   const contactItems = items.map(({ title, link }, index) => (
     <p key={index} className="tc ph3 f4 f3-m f2-l fw2 mv3">
-      <a href={link} className="black-90">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="black-90"
+      >
         {title}
       </a>
     </p>
