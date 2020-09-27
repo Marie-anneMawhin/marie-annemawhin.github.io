@@ -6,7 +6,7 @@ const items = [
     date: '2020',
     title:
       'Protective effect of ApoA1- Milano in a rat model of large vessel occlusion stroke.',
-    journal: 'Stroke.;STROKEAHA119027898',
+    journal: 'Stroke, STROKEAHA119027898',
     authors: [
       'C. Ducroux',
       'J.P. Desilles',
@@ -55,31 +55,45 @@ const items = [
     title:
       'Blocking the receptor EP3 to PGE2 as a way to safely prevent atherothrombosis.',
     journal: 'Recept. Clin. Investig. 3',
-    authors: []
+    authors: ['M.A. MAWHIN', 'J.E. Fabre']
   },
   {
     date: '2008 - 2009',
     title:
       'A rational target to prevent atherothrombosis without inducing bleeding.',
-    journal: 'Prostaglandins Other Lipid Mediat. 121, 4–16'
+    journal: 'Prostaglandins Other Lipid Mediat. 121, 4–16',
+    authors: ['M.A. MAWHIN', ' P. Tilly', 'J.E. Fabre']
   },
   {
     date: '2006 - 2008',
     title:
       'Dendritic cells differently phagocytose activated or apoptotic blood platelets.',
-    journal: 'J. Thromb. Haemost. 11, 205'
+    journal: 'J. Thromb. Haemost. 11, 205',
+    authors: [
+      'B. Maitre',
+      'M.A. MAWHIN',
+      'A. Eckly',
+      'V. Heim',
+      'H. De La Salle',
+      'C. Gachet'
+    ]
   }
 ]
 
 const Publications: React.FC = () => {
-  const publicationItems = items.map(({ date, title, journal }, index) => (
-    <div key={index} className="tc ph3">
-      <p className="f4 f3-m f2-l fw2 black-90 mv3">{title}</p>
-      <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
-        <span>{date}</span>&nbsp;<span>{journal}</span>
-      </p>
-    </div>
-  ))
+  const publicationItems = items.map(
+    ({ date, title, journal, authors }, index) => (
+      <div key={index} className="tc ph3">
+        <p className="f4 f3-m f2-l fw2 black-90 mv3">{title}</p>
+        <p className="f7 f6-m f5-l fw2 black-50 mt0 lh-copy i">
+          {authors.join(', ')}
+        </p>
+        <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+          <span>{date}</span>&nbsp;<span>{journal}</span>
+        </p>
+      </div>
+    )
+  )
   return (
     <Fragment>
       <SectionHeader title="Publications" />
