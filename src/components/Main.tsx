@@ -19,10 +19,10 @@ class Main extends Component {
         <Projects />
         <Experience />
         <Education />
-        <Publications />
         <Achievements />
-        <Languages />
+        <Publications />
         <Interests />
+        <Languages />
       </Fragment>
     )
   }

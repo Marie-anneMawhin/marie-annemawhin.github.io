@@ -4,13 +4,13 @@ const sectionsTitles = [
   'Bio',
   'Contact',
   'Skills',
-  'Languages',
-  'Interests',
-  'Experience',
   'Projects',
+  'Experience',
   'Education',
+  'Achievements',
   'Publications',
-  'Achievements'
+  'Interests',
+  'Languages'
 ]
 
 const NavBar: React.FC = () => {
