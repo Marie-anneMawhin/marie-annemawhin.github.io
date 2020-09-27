@@ -2,12 +2,13 @@ import React, { Component, Fragment } from 'react'
 import Bio from './Bio'
 import Contact from './Contact'
 import Skills from './Skills'
-import Languages from './Languages'
-import Interests from './Interests'
+import Projects from './Projects'
 import Experience from './Experience'
 import Education from './Education'
 import Publications from './Publications'
 import Achievements from './Achievements'
+import Languages from './Languages'
+import Interests from './Interests'
 class Main extends Component {
   render(): JSX.Element {
     return (
@@ -15,12 +16,13 @@ class Main extends Component {
         <Bio />
         <Contact />
         <Skills />
-        <Languages />
-        <Interests />
+        <Projects />
         <Experience />
         <Education />
         <Publications />
         <Achievements />
+        <Languages />
+        <Interests />
       </Fragment>
     )
   }
