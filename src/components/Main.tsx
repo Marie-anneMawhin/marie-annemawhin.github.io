@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import Bio from './Bio'
 import Contact from './Contact'
 import Skills from './Skills'
 import Languages from './Languages'
@@ -11,6 +12,7 @@ class Main extends Component {
   render(): JSX.Element {
     return (
       <Fragment>
+        <Bio />
         <Contact />
         <Skills />
         <Languages />

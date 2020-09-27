@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 const sectionsTitles = [
+  'Bio',
   'Contact',
   'Skills',
   'Languages',
