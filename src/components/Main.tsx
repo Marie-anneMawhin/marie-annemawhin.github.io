@@ -5,6 +5,7 @@ import Interests from './Interests'
 import Experience from './Experience'
 import Education from './Education'
 import Publications from './Publications'
+import Achievements from './Achievements'
 class Main extends Component {
   render(): JSX.Element {
     return (
@@ -15,6 +16,7 @@ class Main extends Component {
         <Experience />
         <Education />
         <Publications />
+        <Achievements />
       </Fragment>
     )
   }
