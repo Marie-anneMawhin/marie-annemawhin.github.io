@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
     <li key={id} className="pv3 bb b--washed-blue">
       <a
         onClick={() => scrollToId(title.toLowerCase())}
-        className="f5 fw5 link dim washed-blue bg-navy"
+        className="f6 f5-m f4-l fw5 link dim washed-blue bg-navy"
         href="#0"
       >
         {title}
