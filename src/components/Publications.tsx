@@ -18,7 +18,8 @@ const items = [
       'B. Lapergue',
       'J.B. Michel',
       'P. Amarenco.'
-    ]
+    ],
+    link: 'https://pubmed.ncbi.nlm.nih.gov/32404037/'
   },
   {
     date: '2013 - 2017',
@@ -30,7 +31,8 @@ const items = [
       'M.A. MAWHIN',
       'M. Jandrot-Perrus',
       'B. Ho-Tin-Noé'
-    ]
+    ],
+    link: 'https://pubmed.ncbi.nlm.nih.gov/30046725/'
   },
   {
     date: '2010',
@@ -48,21 +50,25 @@ const items = [
       'M. Back',
       'X. Norel',
       'J.E. Fabre'
-    ]
+    ],
+    link: 'https://pubmed.ncbi.nlm.nih.gov/29800147/'
   },
   {
     date: '2009 - 2012',
     title:
       'Blocking the receptor EP3 to PGE2 as a way to safely prevent atherothrombosis.',
     journal: 'Recept. Clin. Investig. 3',
-    authors: ['M.A. MAWHIN', 'J.E. Fabre']
+    authors: ['M.A. MAWHIN', 'J.E. Fabre'],
+    link: 'https://pubmed.ncbi.nlm.nih.gov/26463849/'
   },
   {
     date: '2008 - 2009',
     title:
       'A rational target to prevent atherothrombosis without inducing bleeding.',
     journal: 'Prostaglandins Other Lipid Mediat. 121, 4–16',
-    authors: ['M.A. MAWHIN', ' P. Tilly', 'J.E. Fabre']
+    authors: ['M.A. MAWHIN', ' P. Tilly', 'J.E. Fabre'],
+    link:
+      'https://www.sciencedirect.com/science/article/abs/pii/S1098882315300149'
   },
   {
     date: '2006 - 2008',
@@ -76,7 +82,8 @@ const items = [
       'V. Heim',
       'H. De La Salle',
       'C. Gachet'
-    ]
+    ],
+    link: 'https://insights.ovid.com/crossref?an=00149457-201307002-00464'
   }
 ]
 
