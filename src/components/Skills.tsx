@@ -94,10 +94,19 @@ const Skills: React.FC = () => {
       </p>
     </div>
   ))
+  const otherSkillItems = items.other.map(({ title, skills }, index) => (
+    <div key={index} className="tc ph3">
+      <p className="f4 f3-m f2-l fw2 black-90 mv3">{title}</p>
+      <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+        {skills.join(', ')}
+      </p>
+    </div>
+  ))
   return (
     <Fragment>
       <SectionHeader title="Skills" />
       {keySkillItems}
+      {otherSkillItems}
     </Fragment>
   )
 }
