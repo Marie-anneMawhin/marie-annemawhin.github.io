@@ -4,7 +4,7 @@ import preval from 'preval.macro'
 const LastUpdated: React.FC = () => {
   return (
     <div>
-      <p className="tr  black-50">
+      <p className="tr fw2 black-50">
         Last updated: {preval`module.exports = new Date().toLocaleString();`}.
       </p>
     </div>
