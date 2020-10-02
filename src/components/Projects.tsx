@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="black-90"
+          className="link dark-blue"
         >
           {name}
         </a>
