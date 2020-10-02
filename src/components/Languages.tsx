@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import SectionHeader from './SectionHeader'
 
 const items = [
@@ -19,10 +19,10 @@ const Languages: React.FC = () => {
     </div>
   ))
   return (
-    <Fragment>
+    <div className="mb4">
       <SectionHeader title="Languages" />
       {keySkillItems}
-    </Fragment>
+    </div>
   )
 }
 
