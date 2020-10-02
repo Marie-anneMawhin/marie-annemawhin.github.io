@@ -9,7 +9,7 @@ const items = [
 ]
 
 const Languages: React.FC = () => {
-  const keySkillItems = items.map(({ language, flag, level }, index) => (
+  const languageItems = items.map(({ language, flag, level }, index) => (
     <div key={index} className="tc ph3">
       <p className="f4 f3-m f2-l fw2 black-90 mv3">
         <span>{flag}</span>&nbsp;
@@ -21,7 +21,7 @@ const Languages: React.FC = () => {
   return (
     <div className="mb4">
       <SectionHeader title="Languages" />
-      {keySkillItems}
+      {languageItems}
     </div>
   )
 }
