@@ -32,7 +32,7 @@ const items = {
       ]
     },
     {
-      title: 'Techinical Biology',
+      title: 'Technical Biology',
       skills: [
         'genotyping',
         'qPCR',
