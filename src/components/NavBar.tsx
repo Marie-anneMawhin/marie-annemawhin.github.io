@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-const sectionsTitles = [
+const sectionTitles = [
   'Bio',
   'Contact',
   'Skills',
@@ -23,8 +23,13 @@ const NavBar: React.FC = () => {
     }
   }
 
-  const links = sectionsTitles.map((title, id) => (
-    <li key={id} className="pv3 bb b--washed-blue">
+  const links = sectionTitles.map((title, id) => (
+    <li
+      key={id}
+      className={`pv3 ${
+        id !== sectionTitles.length - 1 ? 'bb ' : ''
+      }b--washed-blue`}
+    >
       <a
         onClick={() => scrollToId(title.toLowerCase())}
         className="f6 f5-m f4-l fw5 link dim washed-blue bg-navy"
