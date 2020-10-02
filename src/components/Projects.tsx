@@ -4,17 +4,17 @@ import SectionHeader from './SectionHeader'
 const items = [
   {
     name: "DS4A Women's Summit",
-    date: '2020',
+    date: 'Autumn 2020',
     description:
       'Data Science for All: Women’s Summit is a novel program designed to connect more young women with data science & analytics employers. The program includes five weeks of free training and mentorship, and exclusive recruiting opportunities with top firms.',
     link: 'https://www.correlation-one.com/ds4a'
   },
   {
     name: 'S2DS',
-    date: '2020',
+    date: 'Winter 2020',
     description:
       'Europe’s largest data science training programme. Five weeks of intensive, project-based training turning exceptional analytical PhDs and MScs into Data Scientists.',
-    link: 'https://www.s2ds.org/'
+    link: 'http://www.s2ds.org/'
   }
 ]
 
