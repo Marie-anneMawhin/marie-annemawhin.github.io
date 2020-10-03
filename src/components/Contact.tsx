@@ -25,7 +25,7 @@ const items: {
 
 const Contact: React.FC = () => {
   const contactItems = items.map(({ title, link, colour, iconName }, index) => (
-    <p key={index} className="tc ph3 f4 f3-m f2-l fw2 mv3">
+    <p key={index} className="fl w-100 w-50-ns tc ph3 f4 f3-m f2-l fw2 mv3">
       <span className={colour + ' pr2'}>
         <FontAwesomeIcon icon={['fab', iconName]} />
       </span>
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
   return (
     <Fragment>
       <SectionHeader title="Contact" />
-      {contactItems}
+      <div className="cf">{contactItems}</div>
     </Fragment>
   )
 }
