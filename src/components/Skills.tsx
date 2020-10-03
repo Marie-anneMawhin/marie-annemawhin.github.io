@@ -6,7 +6,7 @@ const items = {
     {
       title: 'Programming',
       skills: [
-        'Python (Panda, Seaborn, Matplotlib)',
+        'Python (Panda, Seaborn, Matplotlib, SKLearn, Keras)',
         'notions of R and SQL',
         'Jython'
       ]
