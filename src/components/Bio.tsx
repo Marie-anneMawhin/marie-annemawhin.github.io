@@ -17,14 +17,13 @@ const Bio: React.FC = () => {
           to automate and improve my work.
         </p>
         <p className="mv4">
-          I&apos;ve also written Python scripts to clean and analyse a large
-          medical dataset from a clinical trial. I&apos;ve also written scripts
-          to analyse and visualise PCR results and plot evolutionary data.
+          I&apos;ve written Python scripts to clean and analyse a large medical
+          dataset from a clinical trial. I&apos;ve also written scripts to
+          analyse and visualise PCR results and plot evolutionary data.
         </p>
         <p className="mv4">
-          I find great pleasure in the scientific reasoning, the challenge of
-          problem solving and the joy of automation and efficiency that
-          progamming offers.
+          I find great pleasure in the scientific reasoning, problem solving and
+          the satisfication of automation and efficiency that progamming offers.
         </p>
         <p className="mv3">
           Thus far I&apos;m self-taught, and I am now trying to implement Deep
