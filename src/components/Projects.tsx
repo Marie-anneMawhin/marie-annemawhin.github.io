@@ -21,7 +21,7 @@ const items = [
 const Projects: React.FC = () => {
   const projectItems = items.map(({ name, date, description, link }, index) => (
     <div key={index} className="tc ph3">
-      <p className="f4 f3-m f2-l fw2 black-90 mv3">
+      <p className="f4 f3-m f2-l fw2 black-90  mt4 mb1">
         <a
           href={link}
           target="_blank"

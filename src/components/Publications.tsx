@@ -91,7 +91,7 @@ const Publications: React.FC = () => {
   const publicationItems = items.map(
     ({ date, title, journal, authors, link }, index) => (
       <div key={index} className="tc ph3">
-        <p className="f4 f3-m f2-l fw2 mv3">
+        <p className="f4 f3-m f2-l fw2 mt4 mb1">
           <a
             href={link}
             target="_blank"
@@ -101,10 +101,10 @@ const Publications: React.FC = () => {
             {title}
           </a>
         </p>
-        <p className="f7 f6-m f5-l fw2 black-50 mt0 lh-copy i">
+        <p className="f7 f6-m f5-l fw2 black-50 mv1 lh-copy i">
           {authors.join(', ')}
         </p>
-        <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+        <p className="f5 f4-m f3-l fw2 black-50 mv1 lh-copy">
           <span>{date}</span>&nbsp;<span>{journal}</span>
         </p>
       </div>
