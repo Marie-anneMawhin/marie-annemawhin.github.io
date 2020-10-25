@@ -10,7 +10,8 @@ const items = [
     link: 'https://www.correlation-one.com/ds4a',
     image:
       'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/ds4a-poster.png',
-    altText: 'DS4A Poster'
+    altText: 'DS4A Poster',
+    imageId: 'ds4a'
   },
   {
     name: 'S2DS',
@@ -23,7 +24,7 @@ const items = [
 
 const Projects: React.FC = () => {
   const projectItems = items.map(
-    ({ name, date, description, link, image, altText }, index) => (
+    ({ name, date, description, link, image, altText, imageId }, index) => (
       <div key={index} className="tc ph3">
         <p className="f4 f3-m f2-l fw2 black-90  mt4 mb1">
           <a
@@ -37,7 +38,7 @@ const Projects: React.FC = () => {
           <span> - {date}</span>
         </p>
         <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{description}</p>
-        {image ? <img src={image} alt={altText} /> : null}
+        {image ? <img src={image} alt={altText} id={imageId} /> : null}
       </div>
     )
   )
