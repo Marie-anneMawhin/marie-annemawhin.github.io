@@ -47,7 +47,8 @@ const Bio: React.FC = () => {
         <p className="mv4">
           I&apos;m interested in combining my biology knowledge with my data
           science skills, especially in image anyalysis, machine learning and
-          computer vision, and being part of the future of data-driven biology.
+          computer vision. I&apos;m thrilled to be part of the future of
+          data-driven biological research.
         </p>
       </div>
     </Fragment>
