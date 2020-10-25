@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { scrollToId } from '../utils/scrollToId'
 
 const sectionTitles = [
   'Bio',
@@ -15,15 +16,6 @@ const sectionTitles = [
 ]
 
 const NavBar: React.FC = () => {
-  const scrollToId = (id: string) => {
-    const selector = document.querySelector(`#${id}`)
-    if (selector) {
-      return selector.scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
-  }
-
   const links = sectionTitles.map((title, id) => (
     <li
       key={id}
