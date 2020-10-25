@@ -32,13 +32,13 @@ const Bio: React.FC = () => {
         <p className="mv4">
           I&apos;m keen to take my data science skills to the next level, and am
           excited to have been selected for the Data Science For All (DS4A) -
-          Womens&apos;s Summit, and the Science 2 Data Science (S2DS)
-          programmes.
+          Womens&apos; Summit, which I have now completed (see my project
+          below!) and the Science 2 Data Science (S2DS) programmes.
         </p>
         <p className="mv4">
           I&apos;m interested in combining my biology knowledge with my data
           science skills, especially in image anyalysis, machine learning and
-          computer vision.
+          computer vision, and being part of the future of data-driven biology.
         </p>
       </div>
     </Fragment>
