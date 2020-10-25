@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import 'tachyons'
+import './css/app.css'
 import * as serviceWorker from './serviceWorker'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
