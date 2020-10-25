@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import SectionHeader from './SectionHeader'
+//@ts-ignore
+import { Player } from 'video-react'
 
 const items = [
   {
@@ -7,7 +9,13 @@ const items = [
     date: 'Autumn 2020',
     description:
       'Data Science for All: Women’s Summit is a novel program designed to connect more young women with data science & analytics employers. The program includes five weeks of free training and mentorship, and exclusive recruiting opportunities with top firms.',
-    link: 'https://www.correlation-one.com/ds4a'
+    link: 'https://www.correlation-one.com/ds4a',
+    image:
+      'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/ds4a-poster.png',
+    altText: 'DS4A Poster',
+    imageId: 'ds4a',
+    video:
+      'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/ds4a.mp4'
   },
   {
     name: 'S2DS',
@@ -19,22 +27,35 @@ const items = [
 ]
 
 const Projects: React.FC = () => {
-  const projectItems = items.map(({ name, date, description, link }, index) => (
-    <div key={index} className="tc ph3">
-      <p className="f4 f3-m f2-l fw2 black-90  mt4 mb1">
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link dark-blue"
-        >
-          {name}
-        </a>
-        <span> - {date}</span>
-      </p>
-      <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{description}</p>
-    </div>
-  ))
+  const projectItems = items.map(
+    (
+      { name, date, description, link, image, altText, imageId, video },
+      index
+    ) => (
+      <div key={index} className="tc ph3">
+        <p className="f4 f3-m f2-l fw2 black-90  mt4 mb1">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link dark-blue"
+          >
+            {name}
+          </a>
+          <span> - {date}</span>
+        </p>
+        <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{description}</p>
+        {image && (
+          <img src={image} alt={altText} id={imageId} className="mb3" />
+        )}
+        {video && (
+          <Player>
+            <source src={video} type="video/mp4" />
+          </Player>
+        )}
+      </div>
+    )
+  )
   return (
     <Fragment>
       <SectionHeader title="Projects" />

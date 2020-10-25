@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import SectionHeader from './SectionHeader'
+import { scrollToId } from '../utils/scrollToId'
 
 const Bio: React.FC = () => {
   return (
@@ -32,13 +33,22 @@ const Bio: React.FC = () => {
         <p className="mv4">
           I&apos;m keen to take my data science skills to the next level, and am
           excited to have been selected for the Data Science For All (DS4A) -
-          Womens&apos;s Summit, and the Science 2 Data Science (S2DS)
-          programmes.
+          Womens&apos; Summit, which I have now completed (
+          <a
+            onClick={() => scrollToId('ds4a')}
+            className="link dark-blue"
+            href="#0"
+          >
+            see my project below!
+          </a>
+          ). I&apos;m now taking part in the Science 2 Data Science (S2DS)
+          programme.
         </p>
         <p className="mv4">
           I&apos;m interested in combining my biology knowledge with my data
           science skills, especially in image anyalysis, machine learning and
-          computer vision.
+          computer vision. I&apos;m thrilled to be part of the future of
+          data-driven biological research.
         </p>
       </div>
     </Fragment>
