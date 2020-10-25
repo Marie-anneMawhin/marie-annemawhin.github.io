@@ -41,7 +41,8 @@ const Bio: React.FC = () => {
           >
             see my project below!
           </a>
-          ) and the Science 2 Data Science (S2DS) programmes.
+          ). I&apos;m now taking part in the Science 2 Data Science (S2DS)
+          programme.
         </p>
         <p className="mv4">
           I&apos;m interested in combining my biology knowledge with my data
