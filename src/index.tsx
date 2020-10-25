@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import './css/app.css'
 import * as serviceWorker from './serviceWorker'
+import TagManager from 'react-gtm-module'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
+
+if (process.env.GTM_ID && process.env.NODE_ENV === 'production') {
+  TagManager.initialize({ gtmId: process.env.GTM_ID })
+}
 
 ReactDOM.render(
   <React.StrictMode>
