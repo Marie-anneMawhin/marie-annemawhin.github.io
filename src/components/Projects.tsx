@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
           <span> - {date}</span>
         </p>
         <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{description}</p>
-        <img src={image} alt={altText} />
+        {image ? <img src={image} alt={altText} /> : null}
       </div>
     )
   )
