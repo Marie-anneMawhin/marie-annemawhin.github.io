@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader'
 
 const items = [
   {
-    date: '2020 - present',
+    date: '2020–present',
     role: 'Research associate in Cardiorenal Science',
     location: 'Imperial College, London',
     specialisation: 'Macrophages in uremic cardiomyopathy',
@@ -45,7 +45,7 @@ const items = [
     tasks: ['benchwork', 'contribution to protocol design']
   },
   {
-    date: '2013 - 2017',
+    date: '2013–2017',
     role: '  Project Leader in Cardiovascular Immunology (PhD)',
     location: 'INSERM U1148, Paris / IGBMC UMR_704, Strasbourg',
     specialisation:
@@ -62,7 +62,7 @@ const items = [
     ]
   },
   {
-    date: '2011 - 2012',
+    date: '2011–2012',
     role: 'Intern in Platelet Biology and Immunology (M.Sc)',
     location: 'UMRS_949, EFS, Strasbourg',
     specialisation:
@@ -79,7 +79,7 @@ const Experience: React.FC = () => {
         <p className="f4 f3-m f2-l black-90 mt4 mb1">{role}</p>
         <p className="f5 f4-m f3-l mv1 lh-copy">{specialisation}</p>
         <p className="f5 f4-m f3-l mv1 lh-copy">
-          <span>{date}</span>&nbsp;<span>{location}</span>
+          <span>{date}</span> - <span>{location}</span>
         </p>
         <p className="f7 f6-m f5-l mv1 lh-copy i">{skills.join(', ')}</p>
         <p className="f7 f6-m f5-l mv1 lh-copy i">{tasks.join(', ')}</p>
