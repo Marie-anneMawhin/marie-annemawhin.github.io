@@ -75,7 +75,7 @@ const items = [
 const Experience: React.FC = () => {
   const experienceItems = items.map(
     ({ date, role, location, specialisation, skills, tasks }, index) => (
-      <div key={index} className="tc fw2 ph4 black-50">
+      <div key={index} className="tc fw2 ph4 black-60">
         <p className="f4 f3-m f2-l black-90 mt4 mb1">{role}</p>
         <p className="f5 f4-m f3-l mv1 lh-copy">{specialisation}</p>
         <p className="f5 f4-m f3-l mv1 lh-copy">

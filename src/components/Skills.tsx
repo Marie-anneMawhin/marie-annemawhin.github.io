@@ -89,13 +89,13 @@ const Skills: React.FC = () => {
   const keySkillItems = items.key.map(({ title, skills }, index) => (
     <div key={index} className="tc ph3 fw2">
       <p className="f4 f3-m f2-l black-90 mt4 mb1">{title}</p>
-      <p className="f5 f4-m f3-l black-50 mt0 lh-copy">{skills.join(', ')}</p>
+      <p className="f5 f4-m f3-l black-60 mt0 lh-copy">{skills.join(', ')}</p>
     </div>
   ))
   const otherSkillItems = items.other.map(({ title, skills }, index) => (
     <div key={index} className="tc ph3 fw2">
       <p className="f4 f3-m f2-l black-90 mt4 mb1">{title}</p>
-      <p className="f5 f4-m f3-l black-50 mt0 lh-copy">{skills.join(', ')}</p>
+      <p className="f5 f4-m f3-l black-60 mt0 lh-copy">{skills.join(', ')}</p>
     </div>
   ))
   return (

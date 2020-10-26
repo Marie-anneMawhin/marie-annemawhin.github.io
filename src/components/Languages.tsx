@@ -15,7 +15,7 @@ const Languages: React.FC = () => {
         <span>{flag}</span>&nbsp;
         <span>{language}</span>
       </p>
-      <p className="f5 f4-m f3-l black-50 mt0 lh-copy">{level}</p>
+      <p className="f5 f4-m f3-l black-60 mt0 lh-copy">{level}</p>
     </div>
   ))
   return (

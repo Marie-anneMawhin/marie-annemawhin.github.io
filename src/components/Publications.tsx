@@ -23,7 +23,7 @@ const items = [
     link: 'https://pubmed.ncbi.nlm.nih.gov/32404037/'
   },
   {
-    date: '2013 - 2017',
+    date: '2013–2017',
     title: 'Glycoprotein VI in securing vascular integrity in inflamed vessels',
     journal: 'Res. Pract. Thromb. Haemost. 2, 228–239',
     authors: [
@@ -54,7 +54,7 @@ const items = [
     link: 'https://pubmed.ncbi.nlm.nih.gov/29800147/'
   },
   {
-    date: '2009 - 2012',
+    date: '2009–2012',
     title:
       'Blocking the receptor EP3 to PGE2 as a way to safely prevent atherothrombosis',
     journal: 'Recept. Clin. Investig. 3',
@@ -62,7 +62,7 @@ const items = [
     link: 'https://pubmed.ncbi.nlm.nih.gov/26463849/'
   },
   {
-    date: '2008 - 2009',
+    date: '2008–2009',
     title:
       'A rational target to prevent atherothrombosis without inducing bleeding.',
     journal: 'Prostaglandins Other Lipid Mediat. 121, 4–16',
@@ -71,7 +71,7 @@ const items = [
       'https://www.sciencedirect.com/science/article/abs/pii/S1098882315300149'
   },
   {
-    date: '2006 - 2008',
+    date: '2006–2008',
     title:
       'Dendritic cells differently phagocytose activated or apoptotic blood platelets',
     journal: 'J. Thromb. Haemost. 11, 205',
@@ -104,11 +104,11 @@ const Publications: React.FC = () => {
             </span>
           </a>
         </p>
-        <p className="f7 f6-m f5-l black-50 mv1 lh-copy i">
+        <p className="f7 f6-m f5-l black-60 mv1 lh-copy i">
           {authors.join(', ')}
         </p>
-        <p className="f5 f4-m f3-l black-50 mv1 lh-copy">
-          <span>{date}</span>&nbsp;<span>{journal}</span>
+        <p className="f5 f4-m f3-l black-60 mv1 lh-copy">
+          <span>{date}</span> - <span>{journal}</span>
         </p>
       </div>
     )

@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
           </a>
           <span> - {date}</span>
         </p>
-        <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{description}</p>
+        <p className="f5 f4-m f3-l fw2 black-60 mt0 lh-copy">{description}</p>
         {image && (
           <img src={image} alt={altText} id={imageId} className="mb3" />
         )}
