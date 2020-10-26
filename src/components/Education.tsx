@@ -15,7 +15,7 @@ const items = [
   {
     date: '2010',
     course: 'MSc in Epidemiology',
-    provider: 'University Paris V'
+    provider: 'University of Paris V'
   },
   {
     date: '2009 - 2012',
