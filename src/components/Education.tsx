@@ -36,9 +36,9 @@ const items = [
 
 const Education: React.FC = () => {
   const educationItems = items.map(({ date, course, provider }, index) => (
-    <div key={index} className="tc ph3">
-      <p className="f4 f3-m f2-l fw2 black-90 mt4 mb1">{course}</p>
-      <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+    <div key={index} className="tc ph3 fw2">
+      <p className="f4 f3-m f2-l black-90 mt4 mb1">{course}</p>
+      <p className="f5 f4-m f3-l lack-50 mt0 lh-copy">
         <span>{date}</span>&nbsp;<span>{provider}</span>
       </p>
     </div>

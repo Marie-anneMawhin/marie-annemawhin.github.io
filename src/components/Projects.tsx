@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       index
     ) => (
       <div key={index} className="tc ph3">
-        <p className="f4 f3-m f2-l fw2 black-90  mt4 mb1">
+        <p className="f4 f3-m f2-l fw2 black-90 mt4 mb1">
           <a
             href={link}
             target="_blank"

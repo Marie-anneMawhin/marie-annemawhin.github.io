@@ -75,20 +75,14 @@ const items = [
 const Experience: React.FC = () => {
   const experienceItems = items.map(
     ({ date, role, location, specialisation, skills, tasks }, index) => (
-      <div key={index} className="tc ph4">
-        <p className="f4 f3-m f2-l fw2 black-90 mt4 mb1">{role}</p>
-        <p className="f5 f4-m f3-l fw2 black-50 mv1 lh-copy">
-          {specialisation}
-        </p>
-        <p className="f5 f4-m f3-l fw2 black-50 mv1 lh-copy">
+      <div key={index} className="tc fw2 ph4 black-50">
+        <p className="f4 f3-m f2-l black-90 mt4 mb1">{role}</p>
+        <p className="f5 f4-m f3-l mv1 lh-copy">{specialisation}</p>
+        <p className="f5 f4-m f3-l mv1 lh-copy">
           <span>{date}</span>&nbsp;<span>{location}</span>
         </p>
-        <p className="f7 f6-m f5-l fw2 black-50 mv1 lh-copy i">
-          {skills.join(', ')}
-        </p>
-        <p className="f7 f6-m f5-l fw2 black-50 mv1 lh-copy i">
-          {tasks.join(', ')}
-        </p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i">{skills.join(', ')}</p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i">{tasks.join(', ')}</p>
       </div>
     )
   )

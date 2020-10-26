@@ -10,12 +10,12 @@ const items = [
 
 const Languages: React.FC = () => {
   const languageItems = items.map(({ language, flag, level }, index) => (
-    <div key={index} className="fl w-100 w-50-ns w-25-l tc ph3">
-      <p className="f4 f3-m f2-l fw2 black-90 mv3">
+    <div key={index} className="fl w-100 w-50-ns w-25-l tc ph3 fw2">
+      <p className="f4 f3-m f2-l black-90 mv3">
         <span>{flag}</span>&nbsp;
         <span>{language}</span>
       </p>
-      <p className="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">{level}</p>
+      <p className="f5 f4-m f3-l black-50 mt0 lh-copy">{level}</p>
     </div>
   ))
   return (
