@@ -18,7 +18,7 @@ const Interests: React.FC = () => {
   const interestItems = items.map((item, index) => (
     <p
       key={index}
-      className="tc ph3 f4 f3-m f2-l fw2 black-90 mv3 fl w-100 w-33-m w-25-l"
+      className="tc ph3 f5 f4-m f3-l fw2 black-90 mv3 fl w-50 w-33-m w-25-l"
     >
       {item}
     </p>
