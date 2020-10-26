@@ -7,7 +7,8 @@ import TagManager from 'react-gtm-module'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab)
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, fas)
 
 if (process.env.REACT_APP_GTM_ID && process.env.NODE_ENV === 'production') {
   TagManager.initialize({ gtmId: process.env.REACT_APP_GTM_ID })

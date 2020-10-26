@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import SectionHeader from './SectionHeader'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //@ts-ignore
 import { Player } from 'video-react'
 
@@ -40,7 +41,10 @@ const Projects: React.FC = () => {
             rel="noopener noreferrer"
             className="link dark-blue"
           >
-            {name}
+            <span>{name}</span>
+            <span className="f7 v-mid pl2">
+              <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
+            </span>
           </a>
           <span> - {date}</span>
         </p>

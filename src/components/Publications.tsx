@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import SectionHeader from './SectionHeader'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const items = [
   {
     date: '2020',
     title:
-      'Protective effect of ApoA1- Milano in a rat model of large vessel occlusion stroke.',
+      'Protective effect of ApoA1- Milano in a rat model of large vessel occlusion stroke',
     journal: 'Stroke, STROKEAHA119027898',
     authors: [
       'C. Ducroux',
@@ -23,8 +24,7 @@ const items = [
   },
   {
     date: '2013 - 2017',
-    title:
-      'Glycoprotein VI in securing vascular integrity in inflamed vessels.',
+    title: 'Glycoprotein VI in securing vascular integrity in inflamed vessels',
     journal: 'Res. Pract. Thromb. Haemost. 2, 228–239',
     authors: [
       'Y.Boulaftali',
@@ -37,7 +37,7 @@ const items = [
   {
     date: '2010',
     title:
-      'Neutrophils recruited by leukotriene B4 induce plaque destabilization during endotoxemia.',
+      'Neutrophils recruited by leukotriene B4 induce plaque destabilization during endotoxemia',
     journal: 'Cardiovasc. Res.',
     authors: [
       'M.A. MAWHIN',
@@ -56,7 +56,7 @@ const items = [
   {
     date: '2009 - 2012',
     title:
-      'Blocking the receptor EP3 to PGE2 as a way to safely prevent atherothrombosis.',
+      'Blocking the receptor EP3 to PGE2 as a way to safely prevent atherothrombosis',
     journal: 'Recept. Clin. Investig. 3',
     authors: ['M.A. MAWHIN', 'J.E. Fabre'],
     link: 'https://pubmed.ncbi.nlm.nih.gov/26463849/'
@@ -73,7 +73,7 @@ const items = [
   {
     date: '2006 - 2008',
     title:
-      'Dendritic cells differently phagocytose activated or apoptotic blood platelets.',
+      'Dendritic cells differently phagocytose activated or apoptotic blood platelets',
     journal: 'J. Thromb. Haemost. 11, 205',
     authors: [
       'B. Maitre',
@@ -98,7 +98,10 @@ const Publications: React.FC = () => {
             rel="noopener noreferrer"
             className="link dark-blue"
           >
-            {title}
+            <span>{title}</span>
+            <span className="f7 v-mid pl2">
+              <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
+            </span>
           </a>
         </p>
         <p className="f7 f6-m f5-l black-50 mv1 lh-copy i">
