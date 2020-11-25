@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './components/NavBar'
 import Main from './components/Main'
+import { scrollToId } from './utils/scrollToId'
 
 function App(): JSX.Element {
+  useEffect(() => {
+    const location = window.location.search.substring(3)
+    if (location) scrollToId(location, 'auto')
+  })
+
   return (
     <div className="App vh-100 avenir">
       <div className="fl w-third w-30-m w-20-l h-100 overflow-y-scroll pa2 pa3-ns bg-navy washed-blue o-80">
