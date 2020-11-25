@@ -36,7 +36,7 @@ const Bio: React.FC = () => {
           Womens&apos; Summit, which I have now completed (
           <button
             onClick={() => scrollToId('ds4a')}
-            className="link pa0 ba bw0 dark-blue bg-washed-blue pointer"
+            className="link fw2 pa0 ba bw0 dark-blue bg-washed-blue pointer"
           >
             see my project below!
           </button>
