@@ -34,13 +34,12 @@ const Bio: React.FC = () => {
           I&apos;m keen to take my data science skills to the next level, and am
           excited to have been selected for the Data Science For All (DS4A) -
           Womens&apos; Summit, which I have now completed (
-          <a
+          <button
             onClick={() => scrollToId('ds4a')}
-            className="link dark-blue"
-            href="#0"
+            className="link pa0 ba bw0 dark-blue bg-washed-blue pointer"
           >
             see my project below!
-          </a>
+          </button>
           ). I&apos;m now taking part in the Science 2 Data Science (S2DS)
           programme.
         </p>

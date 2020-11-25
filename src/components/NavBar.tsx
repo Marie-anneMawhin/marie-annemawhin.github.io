@@ -23,13 +23,12 @@ const NavBar: React.FC = () => {
         id !== sectionTitles.length - 1 ? 'bb ' : ''
       }b--washed-blue`}
     >
-      <a
+      <button
         onClick={() => scrollToId(title.toLowerCase())}
-        className="f6 f5-m f4-l fw4 link dim washed-blue bg-navy"
-        href="#0"
+        className="f6 f5-m f4-l fw4 link ba bw0 dim washed-blue bg-navy pointer"
       >
         {title}
-      </a>
+      </button>
     </li>
   ))
   return (
