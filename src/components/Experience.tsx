@@ -4,9 +4,18 @@ import SectionHeader from './SectionHeader'
 
 const items = [
   {
+    date: 'Feb. - Mar. 2021',
+    role: 'Data scientist (Freelance)',
+    location: 'Pivigo/EPRI, Remote',
+    specialisation:
+      'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
+    skills: [],
+    tasks: []
+  },
+  {
     date: 'Oct. - Nov. 2020',
     role: 'Data scientist (Freelance)',
-    location: 'Remote Pivigo/EPRI',
+    location: 'Pivigo/EPRI, Remote',
     specialisation:
       'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
     skills: [
