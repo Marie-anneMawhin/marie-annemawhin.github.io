@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+
 import SectionHeader from './SectionHeader'
 import { scrollToId } from '../utils/scrollToId'
 
@@ -7,46 +8,42 @@ const Bio: React.FC = () => {
     <Fragment>
       <SectionHeader title="Bio" />
       <div className="f5 f4-m f3-l fw2 ph3 tj">
+        <p className="mv4">Hello, I&apos;m Marie-anne.</p>
         <p className="mv4">
-          Hello, I&apos;m Marie-anne. I&apos;m a scientist with a background in
-          cardiovascular immunology, and a passion for data science and machine
-          learning.
+          I&apos;m a biologist in cardiovascular immunology and data scientist.
         </p>
         <p className="mv4">
           I&apos;m currently working as a research associate in cardiorenal
-          science, where I&apos;ve written several programs for image analysis
-          to automate and improve my work.
+          science, where I&apos;ve written several Python scripts to analyse
+          images, automate PCR analyses, and to programtically clean and analyse
+          a large clinical dataset using API requests to the ICD API. I have
+          also used Python to plot evolutionary data in a heatmap and conduct
+          flow cytometry analysis with a parametric UMAP (deep learning), which
+          are both published or in revision.
         </p>
         <p className="mv4">
-          I&apos;ve written Python scripts to clean and analyse a large medical
-          dataset from a clinical trial. I&apos;ve also written scripts to
-          analyse and visualise PCR results and plot evolutionary data.
+          I&apos;m also currently working (February - March 2020) part-time for
+          EPRI as a data scientist evaluating electrical power systems using
+          machine learning.
         </p>
         <p className="mv4">
-          I find great pleasure in the scientific reasoning, problem solving and
-          the satisfication of automation and efficiency that progamming offers.
-        </p>
-        <p className="mv3">
-          Thus far I&apos;m self-taught, and I am now trying to implement Deep
-          Learning for my images.
-        </p>
-        <p className="mv4">
-          I&apos;m keen to take my data science skills to the next level, and am
-          excited to have been selected for the Data Science For All (DS4A) -
-          Womens&apos; Summit, which I have now completed (
+          I&apos;ve recently taken part in two bootcamps;&nbsp;
           <button
             onClick={() => scrollToId('ds4a')}
             className="link fw2 pa0 ba bw0 dark-blue bg-washed-blue pointer"
           >
-            see my project below!
+            DS4A
           </button>
-          ). I&apos;m now taking part in the Science 2 Data Science (S2DS)
-          programme.
+          &nbsp;on vaccine response prediction with classification, and S2DS on
+          electrical component assessement involving clustering, regression and
+          survival analysis along with data simulation using GAN.
         </p>
-        <p className="mv4">
+        <p className="mv3">
           I&apos;m interested in combining my biology knowledge with my data
           science skills, especially in image anyalysis, machine learning and
-          computer vision. I&apos;m thrilled to be part of the future of
+          computer vision. I find great pleasure in the scientific reasoning,
+          problem solving and the satisfication of automation and efficiency
+          that progamming offers. I&apos;m thrilled to be part of the future of
           data-driven biological research.
         </p>
       </div>
