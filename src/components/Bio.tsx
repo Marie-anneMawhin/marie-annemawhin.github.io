@@ -7,7 +7,7 @@ const Bio: React.FC = () => {
   return (
     <Fragment>
       <SectionHeader title="Bio" />
-      <div className="f5 f4-m f3-l fw2 ph3 tj">
+      <div className="f5 f4-m f3-l fw3 ph3 tj">
         <p className="mv4">Hello, I&apos;m Marie-anne.</p>
         <p className="mv4">
           I&apos;m a biologist in cardiovascular immunology and data scientist.
@@ -30,13 +30,19 @@ const Bio: React.FC = () => {
           I&apos;ve recently taken part in two bootcamps;&nbsp;
           <button
             onClick={() => scrollToId('ds4a')}
-            className="link fw2 pa0 ba bw0 dark-blue bg-washed-blue pointer"
+            className="link fw3 pa0 ba bw0 blue bg-washed-blue pointer"
           >
             DS4A
           </button>
-          &nbsp;on vaccine response prediction with classification, and S2DS on
-          electrical component assessement involving clustering, regression and
-          survival analysis along with data simulation using GAN.
+          &nbsp;on vaccine response prediction with classification, and&nbsp;
+          <button
+            onClick={() => scrollToId('s2ds')}
+            className="link fw3 pa0 ba bw0 blue bg-washed-blue pointer"
+          >
+            S2DS
+          </button>
+          &nbsp;on electrical component assessement involving clustering,
+          regression and survival analysis along with data simulation using GAN.
         </p>
         <p className="mv3">
           I&apos;m interested in combining my biology knowledge with my data

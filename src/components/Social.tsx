@@ -45,7 +45,7 @@ const Social: React.FC = () => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="link dark-blue"
+          className="link blue"
         >
           {title}
         </a>

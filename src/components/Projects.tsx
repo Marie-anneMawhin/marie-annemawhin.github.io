@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link dark-blue"
+            className="link blue"
           >
             <span>{name}</span>
             <span className="f7 v-mid pl2">

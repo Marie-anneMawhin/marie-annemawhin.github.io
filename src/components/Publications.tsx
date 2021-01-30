@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
-import SectionHeader from './SectionHeader'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SectionHeader from './SectionHeader'
 
 const items = [
   {
@@ -96,7 +97,7 @@ const Publications: React.FC = () => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link dark-blue"
+            className="link blue"
           >
             <span>{title}</span>
             <span className="f7 v-mid pl2">
