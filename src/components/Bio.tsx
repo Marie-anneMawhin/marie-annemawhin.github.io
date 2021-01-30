@@ -44,7 +44,7 @@ const Bio: React.FC = () => {
           &nbsp;on electrical component assessement involving clustering,
           regression and survival analysis along with data simulation using GAN.
         </p>
-        <p className="mv3">
+        <p className="mv4">
           I&apos;m interested in combining my biology knowledge with my data
           science skills, especially in image anyalysis, machine learning and
           computer vision. I find great pleasure and satisfication in the
