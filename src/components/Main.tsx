@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 
 import Achievements from './Achievements'
 import Bio from './Bio'
-import Contact from './Contact'
 import Education from './Education'
 import Experience from './Experience'
 import Interests from './Interests'
@@ -11,12 +10,14 @@ import LastUpdated from './LastUpdated'
 import Projects from './Projects'
 import Publications from './Publications'
 import Skills from './Skills'
+import Social from './Social'
+
 class Main extends Component {
   render(): JSX.Element {
     return (
       <Fragment>
         <Bio />
-        <Contact />
+        <Social />
         <Experience />
         <Skills />
         <Projects />

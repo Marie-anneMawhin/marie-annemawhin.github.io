@@ -5,7 +5,7 @@ import { scrollToId } from '../utils/scrollToId'
 
 const sectionTitles = [
   'Bio',
-  'Contact',
+  'Social',
   'Experience',
   'Skills',
   'Projects',
