@@ -1,16 +1,48 @@
 import React, { Fragment } from 'react'
+
 import SectionHeader from './SectionHeader'
 
 const items = [
   {
-    date: '2020–present',
+    date: 'Feb. - Mar. 2021',
+    role: 'Data scientist (Freelance)',
+    location: 'Pivigo/EPRI, Remote',
+    specialisation:
+      'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
+    skills: [],
+    tasks: []
+  },
+  {
+    date: 'Oct. - Nov. 2020',
+    role: 'Data scientist (Freelance)',
+    location: 'Pivigo/EPRI, Remote',
+    specialisation:
+      'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
+    skills: [
+      'extracting data from raw (excel, pdf)',
+      'feature selection and engineering (AUC, CV), EDA and PCA',
+      'data simulation (Gaussian sampling, CopulanGAN)',
+      'hyperparameterstuning: bayesian gridsearch.',
+      'clustering: hierarchical (inconsistency, cophenetic coefficient correlation), K-Means, sklearn (Gaussian mixture, Mean Shift, agglomerative, spectral, DBSCAN, OPTICS, BIRCH)',
+      'regression: Lasso, Ridge, ElasticNet, SVR, KNN, Random Forest, XGBoost Regressor',
+      "survival analysis: using lifelines and scikit_survival Kaplan Meier, Cox's PH, Random Forest Survival, SVM, Gradient Boosting",
+      'feature importance: coefficient, gini impurity, permutation'
+    ],
+    tasks: [
+      '3 independent tasks involving clustering, regression and survival analysis along with data simulation with GAN',
+      'provided significant tools to assess the quality of steel components to prevent failures, to allow measurement of steel embrittlement for safety and to predict cracking of turbine blades, a phenomenon that has been estimated to cost up to $1 billion a year to the industry',
+      'helped design EPRI future research directions.'
+    ]
+  },
+  {
+    date: '2018–present',
     role: 'Research associate in Cardiorenal Science',
     location: 'Imperial College, London',
     specialisation: 'Macrophages in uremic cardiomyopathy',
     skills: [
       'image analysis programming (macros java/python)',
       'python for biology (pandas, matplotlib, seaborn)',
-      'notion of API request',
+      'notions of API requests',
       'statistical skills',
       'managing projects',
       'conducting and designing experiments',
@@ -81,8 +113,8 @@ const Experience: React.FC = () => {
         <p className="f5 f4-m f3-l mv1 lh-copy">
           <span>{date}</span> - <span>{location}</span>
         </p>
-        <p className="f7 f6-m f5-l mv1 lh-copy i">{skills.join(', ')}</p>
-        <p className="f7 f6-m f5-l mv1 lh-copy i">{tasks.join(', ')}</p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i">{skills.join(' ◦ ')}</p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i">{tasks.join(' ◦ ')}</p>
       </div>
     )
   )

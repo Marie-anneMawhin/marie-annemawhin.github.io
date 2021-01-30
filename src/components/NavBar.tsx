@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { scrollToId } from '../utils/scrollToId'
 
 const sectionTitles = [
   'Bio',
-  'Contact',
+  'Social',
+  'Experience',
   'Skills',
   'Projects',
-  'Experience',
   'Education',
   'Achievements',
   'Publications',

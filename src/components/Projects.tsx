@@ -1,10 +1,22 @@
 import React, { Fragment } from 'react'
-import SectionHeader from './SectionHeader'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //@ts-ignore
 import { Player } from 'video-react'
+import SectionHeader from './SectionHeader'
 
 const items = [
+  {
+    name: 'S2DS',
+    date: 'Winter 2020',
+    description:
+      'Europe’s largest data science training programme. Five weeks of intensive, project-based training turning exceptional analytical PhDs and MScs into Data Scientists.',
+    link: 'http://www.s2ds.org/',
+    image:
+      'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/s2ds-project.png',
+    altText: 'S2DS Presentation Excerpt',
+    projectId: 's2ds'
+  },
   {
     name: "DS4A Women's Summit",
     date: 'Autumn 2020',
@@ -14,32 +26,25 @@ const items = [
     image:
       'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/ds4a-poster.png',
     altText: 'DS4A Poster',
-    imageId: 'ds4a',
+    projectId: 'ds4a',
     video:
       'https://marie-anne-mawhin-github-portfolio.s3.eu-west-2.amazonaws.com/ds4a.mp4'
-  },
-  {
-    name: 'S2DS',
-    date: 'Winter 2020',
-    description:
-      'Europe’s largest data science training programme. Five weeks of intensive, project-based training turning exceptional analytical PhDs and MScs into Data Scientists.',
-    link: 'http://www.s2ds.org/'
   }
 ]
 
 const Projects: React.FC = () => {
   const projectItems = items.map(
     (
-      { name, date, description, link, image, altText, imageId, video },
+      { name, date, description, link, image, altText, projectId, video },
       index
     ) => (
-      <div key={index} className="tc ph3">
+      <div id={projectId} key={index} className="tc ph3">
         <p className="f4 f3-m f2-l fw2 black-90 mt4 mb1">
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link dark-blue"
+            className="link blue"
           >
             <span>{name}</span>
             <span className="f7 v-mid pl2">
@@ -49,9 +54,7 @@ const Projects: React.FC = () => {
           <span> - {date}</span>
         </p>
         <p className="f5 f4-m f3-l fw2 black-60 mt0 lh-copy">{description}</p>
-        {image && (
-          <img src={image} alt={altText} id={imageId} className="mb3" />
-        )}
+        {image && <img src={image} alt={altText} className="mb3" />}
         {video && (
           <Player>
             <source src={video} type="video/mp4" />

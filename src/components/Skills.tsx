@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+
 import SectionHeader from './SectionHeader'
 
 const items = {
@@ -6,8 +7,10 @@ const items = {
     {
       title: 'Programming',
       skills: [
-        'Python (Panda, Seaborn, Matplotlib, SKLearn, Keras)',
-        'notions of R and SQL',
+        'Python (Panda, Seaborn, Matplotlib, Scikit-Learn, TensorFlow, Keras)',
+        'Jupyter',
+        'Git/GitHub',
+        'notions of R, SQL and APIs',
         'Jython'
       ]
     },
