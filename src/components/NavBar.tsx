@@ -12,7 +12,6 @@ const sectionTitles = [
   'Education',
   'Achievements',
   'Publications',
-  'Interests',
   'Languages'
 ]
 
