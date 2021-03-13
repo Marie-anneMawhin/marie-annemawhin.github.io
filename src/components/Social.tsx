@@ -14,7 +14,7 @@ const items: {
   {
     title: 'Blog',
     link: 'https://marie-annemawhin.github.io/blog/',
-    colour: 'light-green',
+    colour: 'washed-red',
     iconType: 'fas',
     iconName: 'edit'
   },
@@ -37,7 +37,7 @@ const items: {
 const Social: React.FC = () => {
   const socialItems = items.map(
     ({ title, link, colour, iconType, iconName }, index) => (
-      <p key={index} className="fl w-100 w-33-ns tc ph3 f4 f3-m f2-l fw2 mv3">
+      <p key={index} className="fl w-100 w-33-ns tc ph3 f5 f4-m f3-l fw4 mv3">
         <span className={colour + ' pr2'}>
           <FontAwesomeIcon icon={[iconType, iconName]} />
         </span>
@@ -45,7 +45,7 @@ const Social: React.FC = () => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="link blue"
+          className="link dark-blue"
         >
           {title}
         </a>
