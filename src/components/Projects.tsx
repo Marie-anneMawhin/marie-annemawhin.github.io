@@ -54,11 +54,15 @@ const Projects: React.FC = () => {
           <span> - {date}</span>
         </p>
         <p className="f6 f5-m f4-l fw4 gray mt0 lh-copy mb4">{description}</p>
-        {image && <img src={image} alt={altText} className="mb3" />}
-        {video && (
-          <Player>
-            <source src={video} type="video/mp4" />
-          </Player>
+        {(image || video) && (
+          <div className="tc">
+            {image && <img src={image} alt={altText} className="mb4" />}
+            {video && (
+              <Player>
+                <source src={video} type="video/mp4" className="mb4" />
+              </Player>
+            )}
+          </div>
         )}
       </div>
     )
