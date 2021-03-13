@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+
 import SectionHeader from './SectionHeader'
 
 const items = [
@@ -8,7 +9,7 @@ const items = [
 
 const Achievements: React.FC = () => {
   const achievementItems = items.map((item, index) => (
-    <p key={index} className="tc ph3 f4 f3-m f2-l fw2 black-90 mv3">
+    <p key={index} className="tc ph3 f5 f4-m f3-l fw4 mid-gray mv3">
       {item}
     </p>
   ))
