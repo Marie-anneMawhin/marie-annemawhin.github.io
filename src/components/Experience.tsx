@@ -8,16 +8,16 @@ const items = [
     role: 'Data scientist (Freelance)',
     location: 'Pivigo/EPRI, Remote',
     specialisation:
-      'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
+      'Evaluating nondestructive examinations of component lifespan in electrical power systems using machine learning',
     skills: [],
     tasks: []
   },
   {
     date: 'Oct. - Nov. 2020',
-    role: 'Data scientist (Freelance)',
+    role: 'Data scientist (Intern)',
     location: 'Pivigo/EPRI, Remote',
     specialisation:
-      'Evaluating nondestructive examinations of steel component lifespan in electrical power systems using machine learning',
+      'Evaluating nondestructive examinations of component lifespan in electrical power systems using machine learning',
     skills: [
       'extracting data from raw (excel, pdf)',
       'feature selection and engineering (AUC, CV), EDA and PCA',
@@ -35,7 +35,7 @@ const items = [
     ]
   },
   {
-    date: '2018–present',
+    date: '2018-present',
     role: 'Research associate in Cardiorenal Science',
     location: 'Imperial College, London',
     specialisation: 'Macrophages in uremic cardiomyopathy',
@@ -72,16 +72,16 @@ const items = [
     role: 'Research associate in Platelet and Cancer biology',
     location: 'INSERM U1148, Bichat Hospital, Paris',
     specialisation:
-      'Ho-Tin-Noé’s Team (benoit.ho-tin-noe@inserm.fr): role of platelets in cancer and inflammation',
+      'The role of platelets in cancer and inflammation: Ho-Tin-Noé’s Team (benoit.ho-tin-noe@inserm.fr)',
     skills: [],
     tasks: ['benchwork', 'contribution to protocol design']
   },
   {
-    date: '2013–2017',
+    date: '2013-2017',
     role: '  Project Leader in Cardiovascular Immunology (PhD)',
     location: 'INSERM U1148, Paris / IGBMC UMR_704, Strasbourg',
     specialisation:
-      'Fabre’s Team (jean-etienne.fabre@inserm.fr): role of neutrophils and leukotrienes in atherosclerosis during endotoxemia',
+      'The role of neutrophils and leukotrienes in atherosclerosis during endotoxemia',
     skills: [],
     tasks: [
       'managing the whole project',
@@ -94,11 +94,10 @@ const items = [
     ]
   },
   {
-    date: '2011–2012',
+    date: '2011-2012',
     role: 'Intern in Platelet Biology and Immunology (M.Sc)',
     location: 'UMRS_949, EFS, Strasbourg',
-    specialisation:
-      'Maitre and Gachet’s Team (blandine.maitre@efs-alsace.fr): platelets and dendritic cells in autoimmunity',
+    specialisation: 'Platelets and dendritic cells in autoimmunity',
     skills: [],
     tasks: ['benchwork', 'reporting', 'problem solving']
   }
@@ -107,14 +106,16 @@ const items = [
 const Experience: React.FC = () => {
   const experienceItems = items.map(
     ({ date, role, location, specialisation, skills, tasks }, index) => (
-      <div key={index} className="tc fw2 ph4 black-60">
-        <p className="f4 f3-m f2-l black-90 mt4 mb1">{role}</p>
-        <p className="f5 f4-m f3-l mv1 lh-copy">{specialisation}</p>
-        <p className="f5 f4-m f3-l mv1 lh-copy">
-          <span>{date}</span> - <span>{location}</span>
+      <div key={index} className="fw4 ph4 black-60 mv5">
+        <p className="mt4 mb3 tc">
+          <span className="f5 f4-m f3-l mid-gray">{role} - </span>
+          <span className="f6 f5-m f4-l">
+            {date} - {location}
+          </span>
         </p>
-        <p className="f7 f6-m f5-l mv1 lh-copy i">{skills.join(' ◦ ')}</p>
-        <p className="f7 f6-m f5-l mv1 lh-copy i">{tasks.join(' ◦ ')}</p>
+        <p className="f6 f5-m f4-l mv1 lh-copy">{specialisation}</p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i tj">{skills.join(' ◦ ')}</p>
+        <p className="f7 f6-m f5-l mv1 lh-copy i tj">{tasks.join(' ◦ ')}</p>
       </div>
     )
   )
