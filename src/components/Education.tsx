@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+
 import SectionHeader from './SectionHeader'
 
 const items = [
@@ -36,9 +37,9 @@ const items = [
 
 const Education: React.FC = () => {
   const educationItems = items.map(({ date, course, provider }, index) => (
-    <div key={index} className="tc ph3 fw2">
-      <p className="f4 f3-m f2-l black-90 mt4 mb1">{course}</p>
-      <p className="f5 f4-m f3-l black-60 mt0 lh-copy">
+    <div key={index} className="tc ph3 fw4">
+      <p className="f5 f4-m f3-l mid-gray mt4 mb1">{course}</p>
+      <p className="f6 f5-m f4-l gray mt0 lh-copy">
         <span>{date}</span> - <span>{provider}</span>
       </p>
     </div>

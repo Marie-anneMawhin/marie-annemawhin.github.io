@@ -4,7 +4,6 @@ import Achievements from './Achievements'
 import Bio from './Bio'
 import Education from './Education'
 import Experience from './Experience'
-import Interests from './Interests'
 import Languages from './Languages'
 import LastUpdated from './LastUpdated'
 import Projects from './Projects'
@@ -24,7 +23,6 @@ class Main extends Component {
         <Education />
         <Achievements />
         <Publications />
-        <Interests />
         <Languages />
         <LastUpdated />
       </Fragment>

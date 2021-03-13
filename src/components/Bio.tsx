@@ -7,7 +7,7 @@ const Bio: React.FC = () => {
   return (
     <Fragment>
       <SectionHeader title="Bio" />
-      <div className="f5 f4-m f3-l fw3 ph3 tj">
+      <div className="f6 f5-m f4-l fw4 ph3 mid-gray tj">
         <p className="mv4">Hello, I&apos;m Marie-anne.</p>
         <p className="mv4">
           I&apos;m a biologist in cardiovascular immunology and data scientist.
@@ -30,14 +30,14 @@ const Bio: React.FC = () => {
           I&apos;ve recently taken part in two bootcamps;&nbsp;
           <button
             onClick={() => scrollToId('ds4a')}
-            className="link fw3 pa0 ba bw0 blue bg-washed-blue pointer"
+            className="link pa0 ba bw0 dark-blue bg-white pointer"
           >
             DS4A
           </button>
           &nbsp;on vaccine response prediction with classification, and&nbsp;
           <button
             onClick={() => scrollToId('s2ds')}
-            className="link fw3 pa0 ba bw0 blue bg-washed-blue pointer"
+            className="link pa0 ba bw0 dark-blue bg-white pointer"
           >
             S2DS
           </button>

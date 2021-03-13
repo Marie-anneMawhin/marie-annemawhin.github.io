@@ -12,18 +12,12 @@ const sectionTitles = [
   'Education',
   'Achievements',
   'Publications',
-  'Interests',
   'Languages'
 ]
 
 const NavBar: React.FC = () => {
   const links = sectionTitles.map((title, id) => (
-    <li
-      key={id}
-      className={`pv2 pv3-ns ${
-        id !== sectionTitles.length - 1 ? 'bb ' : ''
-      }b--washed-blue`}
-    >
+    <li key={id} className={`pv2 pv3-ns`}>
       <button
         onClick={() => scrollToId(title.toLowerCase())}
         className="f6 f5-m f4-l fw4 link ba bw0 dim washed-blue bg-navy pointer"

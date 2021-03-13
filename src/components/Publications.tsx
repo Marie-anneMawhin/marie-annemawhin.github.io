@@ -5,6 +5,81 @@ import SectionHeader from './SectionHeader'
 
 const items = [
   {
+    date: '2021',
+    title:
+      'Longitudinal proteomic profiling of dialysis patients with COVID-19 reveals markers of severity and predictors of death',
+    journal: 'eLife 2021;10:e64827',
+    authors: [
+      'Jack Gisby',
+      'Candice L Clarke',
+      'Nicholas Medjeral-Thomas',
+      'Talat H Malik',
+      'Artemis Papadaki',
+      'Paige M Mortimer',
+      'Norzawani B Buang',
+      'Shanice Lewis',
+      'Marie Pereira',
+      'Frederic Toulza',
+      'Ester Fagnano',
+      'Marie-Anne Mawhin',
+      'Emma E Dutton',
+      'Lunnathaya Tapeng',
+      'Arianne C Richard',
+      'Paul DW Kirk',
+      'Jacques Behmoaras',
+      'Eleanor Sandhu',
+      'Stephen P McAdoo',
+      'Maria F Prendecki',
+      'Matthew C Pickering',
+      'Marina Botto',
+      'Michelle Willicombe',
+      'David C Thomas',
+      'James Edward Peters'
+    ],
+    link: 'https://elifesciences.org/articles/64827'
+  },
+  {
+    date: '2020',
+    title:
+      'PD-1 blockade improves Kupffer cell bacterial clearance in acute liver injury',
+    journal: 'J Clin Invest. 2021;131(4):e140196',
+    authors: [
+      'Evangelos Triantafyllou',
+      'Cathrin L.C. Gudd',
+      'Marie-Anne Mawhin',
+      'Hannah C. Husbyn',
+      'Francesca M. Trovato',
+      'Matthew K. Siggins',
+      'Thomas O’Connor',
+      'Hiromi Kudo',
+      'Sujit K. Mukherjee',
+      'Julia A. Wendon',
+      'Christine Bernsmeier',
+      'Robert D. Goldin',
+      'Marina Botto',
+      'Wafa Khamri',
+      'Mark J.W. McPhail',
+      'Lucia A. Possamai',
+      'Kevin J. Woollard',
+      'Charalambos G. Antoniades',
+      'Mark R. Thursz'
+    ],
+    link: 'https://www.jci.org/articles/view/140196/ga'
+  },
+  {
+    date: '2020',
+    title:
+      'In-silico analysis of myeloid cells across the animal kingdom reveals neutrophil evolution by colony-stimulating factors',
+    journal: 'eLife 2020;9:e60214',
+    authors: [
+      'Damilola Pinheiro',
+      'Marie-Anne Mawhin',
+      'Maria Prendecki',
+      'Kevin J Woollard'
+    ],
+    link: 'https://elifesciences.org/articles/60214'
+  },
+  {
     date: '2020',
     title:
       'Protective effect of ApoA1- Milano in a rat model of large vessel occlusion stroke',
@@ -91,26 +166,23 @@ const items = [
 const Publications: React.FC = () => {
   const publicationItems = items.map(
     ({ date, title, journal, authors, link }, index) => (
-      <div key={index} className="tc ph3 fw2">
-        <p className="f4 f3-m f2-l mt4 mb1">
+      <div key={index} className="tc ph3 fw4 mv5">
+        <p className="f5 f4-m f3-l mt4 mb3 mid-gray">{title}</p>
+        <p className="f6 f5-m f4-l gray mb3 lh-copy">
+          <span>{date}</span> -
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link blue"
+            className="link dark-blue pl1"
           >
-            <span>{title}</span>
-            <span className="f7 v-mid pl2">
+            {journal}
+            <span className="f7 pl2">
               <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
             </span>
           </a>
         </p>
-        <p className="f7 f6-m f5-l black-60 mv1 lh-copy i">
-          {authors.join(', ')}
-        </p>
-        <p className="f5 f4-m f3-l black-60 mv1 lh-copy">
-          <span>{date}</span> - <span>{journal}</span>
-        </p>
+        <p className="f7 f6-m f5-l gray mv1 lh-copy i">{authors.join(', ')}</p>
       </div>
     )
   )

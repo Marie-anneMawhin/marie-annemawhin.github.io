@@ -38,13 +38,13 @@ const Projects: React.FC = () => {
       { name, date, description, link, image, altText, projectId, video },
       index
     ) => (
-      <div id={projectId} key={index} className="tc ph3">
-        <p className="f4 f3-m f2-l fw2 black-90 mt4 mb1">
+      <div id={projectId} key={index} className="ph3">
+        <p className="f5 f4-m f3-l fw4 mid-gray mt4 mb2 tc">
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link blue"
+            className="link dark-blue"
           >
             <span>{name}</span>
             <span className="f7 v-mid pl2">
@@ -53,12 +53,16 @@ const Projects: React.FC = () => {
           </a>
           <span> - {date}</span>
         </p>
-        <p className="f5 f4-m f3-l fw2 black-60 mt0 lh-copy">{description}</p>
-        {image && <img src={image} alt={altText} className="mb3" />}
-        {video && (
-          <Player>
-            <source src={video} type="video/mp4" />
-          </Player>
+        <p className="f6 f5-m f4-l fw4 gray mt0 lh-copy mb4">{description}</p>
+        {(image || video) && (
+          <div className="tc">
+            {image && <img src={image} alt={altText} className="mb4" />}
+            {video && (
+              <Player>
+                <source src={video} type="video/mp4" className="mb4" />
+              </Player>
+            )}
+          </div>
         )}
       </div>
     )
