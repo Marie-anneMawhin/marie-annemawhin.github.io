@@ -7,7 +7,7 @@ const Bio: React.FC = () => {
   return (
     <Fragment>
       <SectionHeader title="Bio" />
-      <div className="f6 f5-m f4-l fw4 ph3 tj dark-gray">
+      <div className="f6 f5-m f4-l fw4 ph3 mid-gray">
         <p className="mv4">Hello, I&apos;m Marie-anne.</p>
         <p className="mv4">
           I&apos;m a biologist in cardiovascular immunology and data scientist.
