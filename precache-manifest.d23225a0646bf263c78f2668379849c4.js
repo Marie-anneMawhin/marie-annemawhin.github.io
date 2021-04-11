@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d64621aa9e7062671c73f4493e612ed",
+    "revision": "f56c9b13bf66290c5dcafd8a9f8baf63",
     "url": "/marie-annemawhin.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marie-annemawhin.github.io/static/css/2.466405bc.chunk.css"
   },
   {
-    "revision": "07eb10420807caca993b",
+    "revision": "4cd0f5e483de7ebbb5a4",
     "url": "/marie-annemawhin.github.io/static/css/main.27a94753.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marie-annemawhin.github.io/static/js/2.c35d943f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "07eb10420807caca993b",
-    "url": "/marie-annemawhin.github.io/static/js/main.0a4ad506.chunk.js"
+    "revision": "4cd0f5e483de7ebbb5a4",
+    "url": "/marie-annemawhin.github.io/static/js/main.e44acf0c.chunk.js"
   },
   {
     "revision": "f6a9eff01c56d5d2c3c1",
