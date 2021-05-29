@@ -118,7 +118,7 @@ const Experience: React.FC = () => {
           <span className="f6 f5-m f4-l fr">{date}</span>
         </p>
         <p className="f6 f5-m f4-l mb3 mt0">{location}</p>
-        <p className="f6 f5-m f4-l mb3 lh-copy">{specialisation}</p>
+        <p className="f6 f5-m f4-l mb3 lh-copy mid-gray">{specialisation}</p>
         <p className="f7 f6-m f5-l mb3 lh-copy i tj">{skills.join(' ◦ ')}</p>
         <p className="f7 f6-m f5-l lh-copy i tj">{tasks.join(' ◦ ')}</p>
       </div>
