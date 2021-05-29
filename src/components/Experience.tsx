@@ -4,13 +4,19 @@ import SectionHeader from './SectionHeader'
 
 const items = [
   {
-    date: 'Feb. - Mar. 2021',
+    date: 'Feb. 2020 - present',
     role: 'Data scientist (Freelance)',
     location: 'Pivigo/EPRI, Remote',
     specialisation:
       'Evaluating nondestructive examinations of component lifespan in electrical power systems using machine learning',
     skills: [],
-    tasks: []
+    tasks: [
+      'Improved accuracy of exchanger defect sizing using regression with a custom ML library, SHAP.',
+      'Developed non-destructive steel assessment using clustering with a custom distance metric (HAC, Kmeans, MDS, UMAP, PCA, PcoA).',
+      'Predicted fracture resistance with simulated data (GAN, regression) to prevent failure.',
+      'Assessed efficacy of continuous tendon monitoring in nuclear plants.',
+      'Analysed survival of blades (survival analysis).'
+    ]
   },
   {
     date: 'Oct. - Nov. 2020',
@@ -35,7 +41,7 @@ const items = [
     ]
   },
   {
-    date: '2018-present',
+    date: '2018 - present',
     role: 'Research associate in Cardiorenal Science',
     location: 'Imperial College, London',
     specialisation: 'Macrophages in uremic cardiomyopathy',
@@ -77,7 +83,7 @@ const items = [
     tasks: ['benchwork', 'contribution to protocol design']
   },
   {
-    date: '2013-2017',
+    date: '2013 - 2017',
     role: '  Project Leader in Cardiovascular Immunology (PhD)',
     location: 'INSERM U1148, Paris / IGBMC UMR_704, Strasbourg',
     specialisation:
@@ -94,7 +100,7 @@ const items = [
     ]
   },
   {
-    date: '2011-2012',
+    date: '2011 - 2012',
     role: 'Intern in Platelet Biology and Immunology (M.Sc)',
     location: 'UMRS_949, EFS, Strasbourg',
     specialisation: 'Platelets and dendritic cells in autoimmunity',
@@ -106,13 +112,12 @@ const items = [
 const Experience: React.FC = () => {
   const experienceItems = items.map(
     ({ date, role, location, specialisation, skills, tasks }, index) => (
-      <div key={index} className="fw4 ph4 black-60 mv5">
-        <p className="mt4 mb3 tc">
-          <span className="f5 f4-m f3-l mid-gray">{role} - </span>
-          <span className="f6 f5-m f4-l">
-            {date} - {location}
-          </span>
+      <div key={index} className="fw4 ph3 black-60 mv5">
+        <p className="mt4 mb1">
+          <span className="f5 f4-m f3-l mid-gray">{role}</span>
+          <span className="f6 f5-m f4-l fr">{date}</span>
         </p>
+        <p className="f6 f5-m f4-l mb3 mt0">{location}</p>
         <p className="f6 f5-m f4-l mb3 lh-copy">{specialisation}</p>
         <p className="f7 f6-m f5-l mb3 lh-copy i tj">{skills.join(' ◦ ')}</p>
         <p className="f7 f6-m f5-l lh-copy i tj">{tasks.join(' ◦ ')}</p>
