@@ -139,7 +139,10 @@ const Skills: React.FC = () => {
   return (
     <div className="mb4">
       <SectionHeader title="Skills" />
-      <div className="cf ph3 f5 f4-m f3-l">{technicalSkills}</div>
+      <div className="cf ph3 f5 f4-m f3-l">
+        <p className="mid-gray mt4 mb2 tc">Technical Skills</p>
+        {technicalSkills}
+      </div>
     </div>
   )
 }
