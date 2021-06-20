@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react'
-
+import React from 'react'
 import SectionHeader from './SectionHeader'
 
 const items = [
@@ -112,8 +111,8 @@ const items = [
 const Experience: React.FC = () => {
   const experienceItems = items.map(
     ({ date, role, location, specialisation, skills, tasks }, index) => (
-      <div key={index} className="fw4 ph3 black-60 mv5">
-        <p className="mt4 mb1">
+      <div key={index} className="fw4 ph3 black-60 mb5">
+        <p className="mb1">
           <span className="f5 f4-m f3-l mid-gray">{role}</span>
           <span className="f6 f5-m f4-l fr">{date}</span>
         </p>
@@ -125,10 +124,10 @@ const Experience: React.FC = () => {
     )
   )
   return (
-    <Fragment>
+    <div>
       <SectionHeader title="Experience" />
       {experienceItems}
-    </Fragment>
+    </div>
   )
 }
 
