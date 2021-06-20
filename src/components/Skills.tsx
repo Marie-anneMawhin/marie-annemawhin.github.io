@@ -1,8 +1,44 @@
-import React, { Fragment } from 'react'
-
+import React from 'react'
 import SectionHeader from './SectionHeader'
 
 const items = {
+  technical: [
+    {
+      title: 'Languages',
+      skills: ['Python, notions of R, SQL and Bash']
+    },
+    {
+      title: 'Software/Tools',
+      skills: [
+        'Linux',
+        'JupyterLab, RStudio',
+        'Version control: Git, GitHub',
+        'Anaconda, Bioconda'
+      ]
+    },
+    { title: 'Data Analysis', skills: ['Pandas', 'Numpy', 'Dask', 'Spark'] },
+    {
+      title: 'Data Visualisation',
+      skills: ['Seaborn, Matplotlib', 'Plotly, Bokeh']
+    },
+    {
+      title: 'Machine Learning',
+      skills: ['Scikit-learn, XGBoost', 'Scikit-survival, Scikit-Image']
+    },
+    {
+      title: 'Deep Learning',
+      skills: ['Keras, TensorFlow', 'GAN for data simulation (SVC)']
+    },
+    {
+      title: 'Others',
+      skills: [
+        'Bioimage analysis',
+        'RNAseq: Limma, Scanpy, Seurat',
+        'Statistical skills: Scipy, Statsmodels',
+        'Web scraping'
+      ]
+    }
+  ],
   key: [
     {
       title: 'Programming',
@@ -89,24 +125,25 @@ const items = {
 }
 
 const Skills: React.FC = () => {
-  const keySkillItems = items.key.map(({ title, skills }, index) => (
-    <div key={index} className="tc ph3 fw4">
-      <p className="f5 f4-m f3-l mt4 mb1 mid-gray">{title}</p>
-      <p className="f6 f5-m f4-l mt0 lh-copy gray">{skills.join(', ')}</p>
+  const technicalSkills = items.technical.map(({ title, skills }, index) => (
+    <div key={index} className="fl w-100 w-50-m w-33-ns fw4">
+      <p className="mb1 mid-gray">{title}</p>
+      {skills.map((skill) => (
+        <p className="f6 f5-m f4-l mv1 lh-copy gray" key={skill}>
+          {skill}
+        </p>
+      ))}
     </div>
   ))
-  const otherSkillItems = items.other.map(({ title, skills }, index) => (
-    <div key={index} className="tc ph3 fw4">
-      <p className="f5 f4-m f3-l mt4 mb1 mid-gray">{title}</p>
-      <p className="f6 f5-m f4-l mt0 lh-copy gray">{skills.join(', ')}</p>
-    </div>
-  ))
+
   return (
-    <Fragment>
+    <div className="mb4">
       <SectionHeader title="Skills" />
-      {keySkillItems}
-      {otherSkillItems}
-    </Fragment>
+      <div className="cf ph3 f5 f4-m f3-l">
+        <p className="mid-gray mt4 mb2 tc">Technical Skills</p>
+        {technicalSkills}
+      </div>
+    </div>
   )
 }
 
