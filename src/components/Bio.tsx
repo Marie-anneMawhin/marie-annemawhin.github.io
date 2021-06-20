@@ -20,15 +20,15 @@ const Bio: React.FC = () => {
         <p className="mv4">
           During my post doctoral position as a research associate in
           cardiorenal science, I have written Python scripts to analyse images,
-          automate PCR analyses, and to programtically clean and analyse a large
-          clinical dataset using HTTP requests to the ICD API. I have also used
-          Python to plot evolutionary data in a heatmap and conduct flow
+          automate PCR analyses, and to programatically clean and analyse a
+          large clinical dataset using HTTP requests to the ICD API. I have also
+          used Python to plot evolutionary data in a heatmap and conduct flow
           cytometry analysis with a parametric UMAP (deep learning), which are
           both published or in revision.
         </p>
         <p className="mv4">
           At the moment I am completing an MSc-level data science course —
-          including a project on identifying leucocytes in images using CNN —
+          including a project on identifying leukocytes in images using CNN —
           certified by the Paris Sorbonne University. I also recently took part
           in two other bootcamps;
           <button onClick={() => scrollToId('ds4a')} className={linkClass}>
@@ -46,8 +46,7 @@ const Bio: React.FC = () => {
           skills, especially in image anyalysis, machine learning and computer
           vision. I find great pleasure and satisfication in the scientific
           reasoning, problem solving, automation and efficiency of programming.
-          I am thrilled to be part of the future of data-driven biological
-          research.
+          I am thrilled to be part of the future of data-driven biology.
         </p>
       </div>
     </Fragment>
