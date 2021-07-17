@@ -166,10 +166,12 @@ const items = [
 const Publications: React.FC = () => {
   const publicationItems = items.map(
     ({ date, title, journal, authors, link }, index) => (
-      <div key={index} className="tc ph3 fw4 mv5">
-        <p className="f5 f4-m f3-l mt4 mb3 mid-gray">{title}</p>
-        <p className="f6 f5-m f4-l gray mb3 lh-copy">
-          <span>{date}</span> -
+      <div key={index} className="fw4 ph3 black-60 mb5-ns">
+        <p className="mb1">
+          <span className="f5 f4-m f3-l mid-gray">{title}</span>
+          <span className="f6 f5-m f4-l fr">{date}</span>
+        </p>
+        <p className="f6 f5-m f4-l mb3 lh-copy">
           <a
             href={link}
             target="_blank"
