@@ -9,14 +9,17 @@ const items = [
 
 const Achievements: React.FC = () => {
   const achievementItems = items.map((item, index) => (
-    <p key={index} className="tc ph3 f5 f4-m f3-l fw4 mid-gray mv3">
+    <p
+      key={index}
+      className="fl w-100 w-50-ns fw4 ph3 f5 f4-m f3-l fw4 mid-gray"
+    >
       {item}
     </p>
   ))
   return (
     <Fragment>
       <SectionHeader title="Achievements" />
-      {achievementItems}
+      <div className="mv3 flex flex-wrap">{achievementItems}</div>
     </Fragment>
   )
 }
