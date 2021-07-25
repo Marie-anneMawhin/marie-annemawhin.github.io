@@ -1,11 +1,18 @@
 import React, { Fragment } from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SectionHeader from './SectionHeader'
 
 const items = [
   {
+    date: '2021',
+    course: 'Data Science bootcamp (9 months, remote)',
+    provider: 'DataScientest',
+    link: 'https://datascientest.com/en'
+  },
+  {
     date: '2020',
-    course: 'Data Science with python (Full track)',
+    course: 'Data Science with Python (Full track)',
     provider: 'DataCamp'
   },
   {
@@ -36,14 +43,31 @@ const items = [
 ]
 
 const Education: React.FC = () => {
-  const educationItems = items.map(({ date, course, provider }, index) => (
-    <div key={index} className="tc ph3 fw4">
-      <p className="f5 f4-m f3-l mid-gray mt4 mb1">{course}</p>
-      <p className="f6 f5-m f4-l gray mt0 lh-copy">
-        <span>{date}</span> - <span>{provider}</span>
-      </p>
-    </div>
-  ))
+  const educationItems = items.map(
+    ({ date, course, provider, link }, index) => (
+      <div key={index} className="fw4 ph3 black-60 mb5-ns">
+        <p className="mb1">
+          <span className="f5 f4-m f3-l mid-gray">{course}</span>
+          <span className="f6 f5-m f4-l fr">{date}</span>
+        </p>
+        <p className="f6 f5-m f4-l mt0">
+          {provider}
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link dark-blue"
+            >
+              <span className="f7 v-mid pl2">
+                <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
+              </span>
+            </a>
+          )}
+        </p>
+      </div>
+    )
+  )
   return (
     <Fragment>
       <SectionHeader title="Education" />

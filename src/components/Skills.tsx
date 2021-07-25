@@ -5,7 +5,7 @@ const items = {
   technical: [
     {
       title: 'Languages',
-      skills: ['Python, notions of R, SQL and Bash']
+      skills: ['Python', 'Bash', 'Notions of R', 'Notions of SQL']
     },
     {
       title: 'Software/Tools',
